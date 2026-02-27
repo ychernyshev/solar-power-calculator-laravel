@@ -1,0 +1,2 @@
+# solar-power-calculator-laravel
+ I build practical web applications with Django and Laravel, focusing on real business logic and clean architecture. One of my portfolio projects is a Solar Power Calculator, a dashboard app that tracks daily energy production, calculates costs, and manages tariffs for a solar station. My work demonstrates not only technical skills but also the ability to turn real‑world problems into functional, user‑friendly solutions.
