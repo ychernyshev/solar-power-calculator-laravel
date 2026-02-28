@@ -90,8 +90,6 @@
                     <a href="https://github.com/">GitHub</a>
                     <a href="licence">Licence</a>
                     <a href="dashboard">Dashboard</a>
-                    <a href="add_entry">Add entry</a>
-                    <a href="settings">Settings</a>
                     
                 </div>
             </div>
