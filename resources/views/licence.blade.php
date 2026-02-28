@@ -52,6 +52,14 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            
+            a {
+                color: #636b6f;
+            }
+            
+            a:visited {
+                color: #636b6f;
+            }
         </style>
     </head>
     <body style="display: flex; justify-content: center">
@@ -77,6 +85,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.</p>
+            <p><a href="https://github.com/" style="font-weight: bold">Source code</a></p>
             </div>
         </div>
     </body>
