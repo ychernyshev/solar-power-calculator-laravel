@@ -14,12 +14,14 @@ use Illuminate\Support\Facades\Route;
  */
 
 Route::get('/', function () {
-    return view('welcome');
+    $title = 'Welcome';
+
+    return view('welcome', ['title' => $title]);
 });
 
 Route::get('/docs', 'DocsController@docs');
 Route::get('/licence', function () {
-    $title = 'Solar Power Calculator: Licence';
+    $title = 'Licence';
 
     return view('licence', ['title' => $title]);
 });
