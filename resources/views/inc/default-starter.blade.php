@@ -108,7 +108,7 @@
         }
     </style>
   </head>
-  <body>
+  <body style="height: 100">
     <div class="content">
       <div class="display-flex justify-content-center">
         <div style="width: 100vh" class="display-flex flex-column justify-content-center align-items-center position-ref full-height">
