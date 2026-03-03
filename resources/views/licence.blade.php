@@ -1,30 +1,10 @@
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-            
-            a {
-                color: #636b6f;
-            }
-            
-            a:visited {
-                color: #636b6f;
-            }
-        </style>
 @extends('inc/default-starter')
 
 @section('section')
-  <div class="title m-b-md" style="text-align: center;">
-          Solar Power Calculator
+  @include('inc.preview-nav')
+  <div class="title m-b-md" style="position: relative; padding-top: 2rem; text-align: center;">
+          <a href="/" class="underline-none text-light">Solar Power Calculator</a>
+          <h2 style="position: absolute; bottom: -2rem; right: 0; font-size: 1.1rem" class="weight-600 text-upper text-light">Laravel edition</h2>
   </div>
   <h3 class="text-left w-100">MIT Licence</h3>
   <p class="text-left w-100">Copyright (c) 2026 Eugene</p>
