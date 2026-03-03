@@ -24,6 +24,22 @@
                 height: 100vh;
             }
 
+            .weight-500 {
+              font-weight: 500;
+            }
+
+            .weight-600 {
+              font-weight: 600;
+            }
+
+            .text-upper {
+              text-transform: uppercase;
+            }
+
+            .text-light {
+              color: #636b6f;
+            }
+
             .flex-center {
                 align-items: center;
                 display: flex;
@@ -52,10 +68,8 @@
                 color: #636b6f;
                 padding: 0 25px;
                 font-size: 13px;
-                font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
-                text-transform: uppercase;
             }
 
             .m-b-md {
@@ -79,18 +93,18 @@
                 </div>
             @endif
 
-            <div class="content" style="position: relative">
-                <div class="title m-b-md">
+            <div class="content">
+                <div class="title m-b-md" style="position: relative">
                     Solar Power Calculator
+                    <h2 style="position: absolute; top: -2rem; right: 0; font-size: 1.1rem" class="weight-600 text-upper text-light">Laravel edition</h2>
                 </div>
-                <h2 style="position: absolute; top: -2rem; right: 0">Laravel edition</h2>
 
-                <div class="links">
+                <div class="links weight-600 text-upper text-light">
                     <a href="docs">Docs</a>
                     <a href="https://github.com/">GitHub</a>
                     <a href="licence">Licence</a>
                     <a href="dashboard">Dashboard</a>
-                    
+
                 </div>
             </div>
         </div>
