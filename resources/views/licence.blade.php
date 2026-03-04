@@ -24,6 +24,7 @@
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.</p>
   <p class="text-left w-100">
+    <a href="#" class="btn btn-outline-secondary">Third party licenses</a>
     <a href="https://github.com/ychernyshev/solar-power-calculator-laravel"
       style="font-weight: bold; text-decoration: none"
       class="links weight-600 text-upper text-light"

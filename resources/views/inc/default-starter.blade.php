@@ -115,6 +115,6 @@
           @yield('section')
         </div>
       </div>
-    </dir>
+    </div>
   </body>
 </html>
