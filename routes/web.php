@@ -20,11 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('/docs', 'DocsController@docs');
-Route::get('/licence', function () {
-    $title = 'Licence';
-
-    return view('licence', ['title' => $title]);
-});
+Route::get('/licences', 'LicenceController@licence');
 Route::get('/dashboard', 'DashboardController@dashboard');
 Route::get('/add_entry', 'AddEntryController@addEntry');
 Route::get('/settings', 'SettingsController@settings');

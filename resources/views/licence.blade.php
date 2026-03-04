@@ -42,47 +42,54 @@
         {{-- Corousell --}}
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
-            <button type="button"
+            @foreach ($licences as $licence)
+              {{-- <button type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0+{{ $licence->id }}"
+              class="active"
+              aria-current="true"
+              aria-label="Slide {{ $licence->id }}"></button> --}}
+              <button type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="{{ $licence->id }}"
+              aria-label="Slide {{ $licence->id }}"></button>
+            @endforeach
+
+
+            {{-- <button type="button"
             data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"></button>
-            <button type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-            <button type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
+            data-bs-slide-to="2+"
             aria-label="Slide 3"></button>
             <button type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
+            aria-label="Slide 4"></button> --}}
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active text-left">
-              <h3>Bootstrap</h3>
-              <h5>MIT License</h5>
-              <p>Copyright (c) 2011-2025 The Bootstrap Authors</p>
-              <p style="text-align: justify">Permission is hereby granted, free of charge, to any person obtaining a copy
-              of this software and associated documentation files (the "Software"), to deal
-              in the Software without restriction, including without limitation the rights
-              to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-              copies of the Software, and to permit persons to whom the Software is
-              furnished to do so, subject to the following conditions:</p>
-              <p style="text-align: justify">The above copyright notice and this permission notice shall be included in all
-              copies or substantial portions of the Software.</p>
-              <p style="text-align: justify">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-              IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-              FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-              AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-              LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-              OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-              SOFTWARE.</p>
-            </div>
-            <div class="carousel-item text-left">
+            @foreach ($licences as $licence)
+              <div class="carousel-item active text-left">
+                <h3>Bootstrap</h3>
+                <h5>{{ $licence->type }} License</h5>
+                <p>Copyright (c) {{ $licence->year }} {{ $licence->vendor }}</p>
+                <p style="text-align: justify">Permission is hereby granted, free of charge, to any person obtaining a copy
+                of this software and associated documentation files (the "Software"), to deal
+                in the Software without restriction, including without limitation the rights
+                to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                copies of the Software, and to permit persons to whom the Software is
+                furnished to do so, subject to the following conditions:</p>
+                <p style="text-align: justify">The above copyright notice and this permission notice shall be included in all
+                copies or substantial portions of the Software.</p>
+                <p style="text-align: justify">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+                IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+                FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+                AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+                LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+                OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+                SOFTWARE.</p>
+              </div>
+            @endforeach
+
+            {{-- <div class="carousel-item text-left">
               <h3>Bootswatch</h3>
               <h5>MIT License</h5>
               <p>Copyright (c) 2013 Thomas Park</p>
@@ -144,7 +151,7 @@
               AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
               LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
               OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-              SOFTWARE.</p>
+              SOFTWARE.</p> --}}
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
