@@ -77,6 +77,23 @@
             text-decoration: none;
         }
 
+        .links > a.text-c-primary {
+          position: relative;
+          display: inline-block;
+          color: #2281B9;
+          text-decoration: none;
+        }
+
+        .links > a.text-c-primary::after {
+          content: '';
+          position: absolute;
+          left: 10%;
+          bottom: -10px;
+          width: 80%;
+          height: 2px;
+          background-color: #2281B9;
+        }
+
         .underline-none {
           text-decoration: none;
         }
