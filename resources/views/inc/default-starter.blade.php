@@ -8,6 +8,9 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset("assets/bootstrap/css/bootstrap.min.css") }}">
+    <link rel="stylesheet" href="{{ asset("assets/bootstrap/css/bootswatch.min.css") }}">
+    <link rel="stylesheet" href="{{ asset("assets/bootstrap/css/bootstrap-icons.css") }}">
 
     <!-- Styles -->
     <style>
@@ -18,10 +21,6 @@
             font-weight: 200;
             height: 100vh;
             margin: 0;
-        }
-
-        .w-100 {
-          width: 100%
         }
 
         .full-height {
@@ -40,21 +39,8 @@
           text-transform: uppercase;
         }
 
-        .text-light {
+        .text-c-light {
           color: #636b6f;
-        }
-
-        .text-left {
-          text-align: left;
-        }
-        }
-
-        .text-right {
-          text-align: right;
-        }
-
-        .text-justify {
-          text-align: justify;
         }
 
         .display-flex {
@@ -63,14 +49,6 @@
 
         .flex-column {
           flex-direction: column;
-        }
-
-        .justify-content-center {
-          justify-content: center;
-        }
-
-        .align-items-center {
-            align-items: center;
         }
 
         .position-ref {
@@ -103,6 +81,11 @@
           text-decoration: none;
         }
 
+        .underline-none:hover,
+        .underline-none:focus {
+          text-decoration: none;
+        }
+
         .m-b-md {
             margin-bottom: 30px;
         }
@@ -116,5 +99,7 @@
         </div>
       </div>
     </div>
+
+    <script src="{{ asset("assets/bootstrap/js/bootstrap.bundle.min.js") }}" charset="utf-8"></script>
   </body>
 </html>
