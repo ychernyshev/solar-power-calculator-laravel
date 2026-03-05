@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCurrentTariffModelsTable extends Migration
+class CreateDataEntryLineWeatherTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateCurrentTariffModelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('current_tariff_models', function (Blueprint $table) {
+        Schema::create('data_entry_line_weather', function (Blueprint $table) {
             $table->id();
-            $table->float('power_tariff')->default(4.32);
+            $table->foreignId('data_entry_line_id')->constrained()->onDelete('cascade');
+            $table->foreignId('weather_condition_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ class CreateCurrentTariffModelsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('current_tariff_models');
+        Schema::dropIfExists('data_entry_line_weather');
     }
 }
