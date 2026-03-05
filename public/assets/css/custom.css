@@ -98,3 +98,11 @@ html, body {
 .bg-c-gray {
   background: #f8f9fa;
 }
+
+.bg-c-dark-gray {
+  background: #E4E7EB;
+}
+
+.bg-c-sunrise {
+  background: #FFC107;
+}

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ asset("assets/css/custom.css") }}">
     @yield('styles')
   </head>
-  <body class="bg-c-gray">
+  <body class="bg-c-dark-gray">
     <header>
       @include('inc/_topnav')
     </header>
