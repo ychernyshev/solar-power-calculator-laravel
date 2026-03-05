@@ -17,6 +17,6 @@ class DataEntryLineModel extends Model
 
     public function weather()
     {
-        return $this->belongsToMany(WeatherCondition::class, 'data_entry_line_weather');
+        return $this->belongsToMany(WeatherConditionModel::class, 'data_entry_line_weather');
     }
 }

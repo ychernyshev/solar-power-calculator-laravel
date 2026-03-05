@@ -15,8 +15,12 @@ class CreateDataEntryLineWeatherTable extends Migration
     {
         Schema::create('data_entry_line_weather', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('data_entry_line_id')->constrained()->onDelete('cascade');
-            $table->foreignId('weather_condition_id')->constrained()->onDelete('cascade');
+            $table->foreignId('data_entry_line_id')
+                  ->constrained('data_entry_line_models')
+                  ->onDelete('cascade');
+            $table->foreignId('weather_condition_id')
+                  ->constrained('weather_condition_models')
+                  ->onDelete('cascade');
             $table->timestamps();
         });
     }
