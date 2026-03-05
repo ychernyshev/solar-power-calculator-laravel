@@ -90,3 +90,11 @@ html, body {
 .m-b-md {
     margin-bottom: 30px;
 }
+
+.position-relative {
+  position: relative;
+}
+
+.bg-c-gray {
+  background: #f8f9fa;
+}
